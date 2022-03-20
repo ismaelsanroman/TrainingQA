@@ -30,11 +30,11 @@ class Training(unittest.TestCase):
     def test1_textBox(self):
         textbox_test(self.driver, user_data=self.get_json_data())
 
-    @pytest.mark.skipif(False)
+    @pytest.mark.skipif(True)
     def test2_checkBox(self):
         checkBox_test(self.driver, user_data=self.get_json_data())
 
-    @pytest.mark.skipif(False)
+    @pytest.mark.skipif(True)
     def test3_radioButtom(self):
         radioButtom_test(self.driver, user_data=self.get_json_data())
 
