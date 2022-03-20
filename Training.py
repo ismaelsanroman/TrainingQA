@@ -42,6 +42,7 @@ class Training(unittest.TestCase):
     @classmethod
     def tearDown(cls):
         print("\n FIN DE LOS TESTS")
+        print("ADIOS")
         cls.driver.quit()
 
 
