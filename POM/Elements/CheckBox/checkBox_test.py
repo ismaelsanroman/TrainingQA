@@ -54,11 +54,12 @@ class checkBox_test:
 
         data_list = []
         data_class = driver.find_elements(By.CLASS_NAME, 'text-success')
-        for x in data_class:
+        
+        """for x in data_class:
             # print(x.text)
-            data_list.append(x.text)
+            data_list.append(x.text)"""
 
-        if len(data_list) == 17:
+        if len(data_class) == 17:
             print("-Checkeo de checksbox correcto")
         else:
             print("---¡¡¡ERROR en el checkeo de checksbox!!!")
