@@ -32,17 +32,17 @@ class Training(unittest.TestCase):
         driver.get("https://demoqa.com/")
         driver.implicitly_wait(time_to_wait=10)
 
-    # @pytest.mark.skipif(False)
-    # def test1_textBox(self):
-    #    textbox_test(self.driver, user_data=self.get_json_data())
+    @pytest.mark.skipif(False)
+    def test1_textBox(self):
+        textbox_test(self.driver, user_data=self.get_json_data())
 
     @pytest.mark.skipif(True)
     def test2_checkBox(self):
-        checkBox_test(self.driver)
+        checkBox_test(self.driver, user_data=self.get_json_data())
 
-    # @pytest.mark.skip
-    # def test3_radioButtom(self):
-    #    radioButtom_test(self.driver, user_data=self.get_json_data())
+    @pytest.mark.skipif(False)
+    def test3_radioButtom(self):
+        radioButtom_test(self.driver, user_data=self.get_json_data())
 
     @classmethod
     def tearDown(cls):
@@ -59,4 +59,3 @@ class Training(unittest.TestCase):
 if __name__ == "__main__":
     # unittest.main(testRunner=HTMLTestRunner(output=os.getcwd(), report_title="Report by Ismael"))
     unittest.main()
-
