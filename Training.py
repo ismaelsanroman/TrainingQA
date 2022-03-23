@@ -13,6 +13,7 @@ from pyunitreport import HTMLTestRunner
 from POM.Elements.TextBox.textbox_test import textbox_test
 from POM.Elements.CheckBox.checkBox_test import checkBox_test
 from POM.Elements.RadioButtom.radioButtom_test import radioButtom_test
+from POM.Elements.WebTables.webTables import webTables_test
 
 
 class Training(unittest.TestCase):
@@ -43,6 +44,10 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)
     def test3_radioButtom(self):
         radioButtom_test(self.driver)
+
+    @pytest.mark.skipif(False)
+    def test4_webTables(self):
+        webTables_test(self.driver)
 
     @classmethod
     def tearDown(cls):
