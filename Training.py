@@ -38,11 +38,11 @@ class Training(unittest.TestCase):
 
     @pytest.mark.skipif(True)
     def test2_checkBox(self):
-        checkBox_test(self.driver, user_data=self.get_json_data())
+        checkBox_test(self.driver)
 
     @pytest.mark.skipif(False)
     def test3_radioButtom(self):
-        radioButtom_test(self.driver, user_data=self.get_json_data())
+        radioButtom_test(self.driver)
 
     @classmethod
     def tearDown(cls):

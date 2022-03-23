@@ -14,7 +14,7 @@ class checkBox_test:
         self.checkBox_flow(driver)
 
     def checkBox_flow(self, driver):
-
+        print("--- TEST CASE: 'checkBox' ---")
         driver.find_element(By.XPATH, '//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]').click()
         driver.find_element(By.ID, 'item-1').click()
 
@@ -73,5 +73,5 @@ class checkBox_test:
 
         time.sleep(3)
 
-print("checkBox Test")
+        print("--- TEST CASE Done ---")
 

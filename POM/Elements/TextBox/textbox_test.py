@@ -11,6 +11,7 @@ class textbox_test:
         driver.find_element(By.ID, tag).send_keys(user_data)
 
     def textbox_flow(self, driver, user_data):
+        print("--- TEST CASE: 'testBox' ---")
         driver.find_element(By.XPATH, '//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]').click()
         driver.find_element(By.ID, 'item-0').click()
         self.clear_and_sendkeys(driver, 'userName', user_data['nombre'])
@@ -34,5 +35,5 @@ class textbox_test:
         else:
             print("¡ERROR! Los datos introducidos no concuerdan con los obtenidos.")
 
-        print("TestBox Test")
+        print("--- TEST CASE Done ---")
 

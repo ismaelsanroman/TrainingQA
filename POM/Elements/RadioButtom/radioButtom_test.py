@@ -27,6 +27,7 @@ class radioButtom_test:
         self.radioButtom_flow(driver)
 
     def radioButtom_flow(self, driver):
+        print("--- TEST CASE: 'radioButtom' ---")
         driver.find_element(By.XPATH, '//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]').click()
         driver.find_element(By.ID, 'item-2').click()
 
@@ -44,4 +45,4 @@ class radioButtom_test:
 
         # --------------------------------------------------------------------------------------
 
-print("--- TEST CASE: 'radioButtom' ---")
+        print("--- TEST CASE Done ---")
