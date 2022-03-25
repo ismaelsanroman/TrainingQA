@@ -22,6 +22,8 @@ def verify_radioButtom(driver, tag_xpath, tag_css, tag_name):
     else:
         print("--- ¡¡¡ERROR RadioButtom '" + tag_name + "'!!!")
 
+    driver.implicitly_wait(3)
+
 class radioButtom_test:
     def __init__(self, driver):
         self.radioButtom_flow(driver)
@@ -36,10 +38,8 @@ class radioButtom_test:
         # ---------------------------------------------------------------------------------------
 
         verify_radioButtom(driver, "//label[contains(text(),'Yes')]", "input[id='yesRadio']", "Yes")
-        driver.implicitly_wait(3)
 
         verify_radioButtom(driver, "//label[contains(text(),'Impressive')]", "input[id='impressiveRadio']", "Impressive")
-        driver.implicitly_wait(3)
 
         verify_radioButtom(driver, "//label[contains(text(),'No')]", "input[id='noRadio']", "No")
 

@@ -1,5 +1,9 @@
 {
   "nombre": "Ismael",
+  "apellido": "Sanroman",
+  "edad": "30",
+  "salario": "1300",
+  "profesion": "Informatico",
   "email": "ismaelsanromansanchez@gmail.com",
   "DirActual": "C/ Republica de Ecuador, 6, nº 3 Izda, 06011, Badajoz (Badajoz)",
   "DirPermanent": "C/ Molino de San Jerónimo, nº 23, bajo, 10140, Guadalupe (Cáceres)"

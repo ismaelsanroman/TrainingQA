@@ -32,7 +32,7 @@ class Training(unittest.TestCase):
         driver.delete_all_cookies()
         driver.get("https://demoqa.com/")
         driver.implicitly_wait(time_to_wait=10)
-
+    """
     @pytest.mark.skipif(False)
     def test1_textBox(self):
         textbox_test(self.driver, user_data=self.get_json_data())
@@ -44,10 +44,10 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)
     def test3_radioButtom(self):
         radioButtom_test(self.driver)
-
+    """
     @pytest.mark.skipif(False)
     def test4_webTables(self):
-        webTables_test(self.driver)
+        webTables_test(self.driver, user_data=self.get_json_data())
 
     @classmethod
     def tearDown(cls):
