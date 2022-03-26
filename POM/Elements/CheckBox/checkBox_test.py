@@ -72,7 +72,5 @@ class checkBox_test:
         click_CheckBox(driver, "//span[contains(text(),'Home')]")
         click_CheckBox(driver, "//body/div[@id='app']/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/button[2]/*[1]")
 
-        time.sleep(3)
-
         print("--- TEST CASE Done ---")
 

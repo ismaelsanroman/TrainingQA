@@ -15,6 +15,7 @@ from POM.Elements.CheckBox.checkBox_test import checkBox_test
 from POM.Elements.RadioButtom.radioButtom_test import radioButtom_test
 from POM.Elements.WebTables.webTables import webTables_test
 from POM.Elements.Button.button_test import button_test
+from POM.Elements.Links.links_test import links_test
 
 
 class Training(unittest.TestCase):
@@ -49,11 +50,15 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)
     def test4_webTables(self):
         webTables_test(self.driver, user_data=self.get_json_data())
-    """
-
+    
     @pytest.mark.skipif(True)
     def test5_button(self):
         button_test(self.driver)
+    """
+
+    @pytest.mark.skipif(True)
+    def test6_links(self):
+        links_test(self.driver)
 
     @classmethod
     def tearDown(cls):

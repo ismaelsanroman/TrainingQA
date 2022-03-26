@@ -32,6 +32,4 @@ class button_test:
         else:
             print("- Botones clicados correctamente")
 
-        time.sleep(5)
-
         print("--- TEST CASE Done ---")
