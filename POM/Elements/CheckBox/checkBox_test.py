@@ -4,8 +4,6 @@ from selenium.webdriver.common.by import By
 import time
 
 
-
-
 def click_CheckBox(driver, tag):
     driver.find_element(By.XPATH, tag).click()
 
