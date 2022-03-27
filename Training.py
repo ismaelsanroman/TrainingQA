@@ -78,5 +78,5 @@ class Training(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    # unittest.main(testRunner=HTMLTestRunner(output=os.getcwd(), report_title="Report by Ismael"))
+    # unittest.main(testRunner=HTMLTestRunner(output=os.getcwd(), report_title="Report by Ismael Sanroman"))
     unittest.main()
