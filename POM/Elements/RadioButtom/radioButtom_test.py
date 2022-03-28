@@ -32,8 +32,7 @@ class radioButtom_test:
         print("--- TEST CASE: 'radioButtom' ---")
         driver.find_element(By.XPATH, '//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]').click()
         driver.find_element(By.ID, 'item-2').click()
-
-        driver.implicitly_wait(3)
+        driver.implicitly_wait(1)
 
         # ---------------------------------------------------------------------------------------
 

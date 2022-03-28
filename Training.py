@@ -17,6 +17,8 @@ from POM.Elements.WebTables.webTables import webTables_test
 from POM.Elements.Button.button_test import button_test
 from POM.Elements.Links.links_test import links_test
 from POM.Elements.BrokenLinks.brokenlinks_test import brokenLinks_test
+from POM.Elements.UploadDownload.uploadDownload import uploadDownload_test
+from POM.Elements.DynamicProperties.dynamicProperties import dynamicProperties_test
 
 
 class Training(unittest.TestCase):
@@ -60,11 +62,19 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)
     def test6_links(self):
         links_test(self.driver)
-    """
+    
     @pytest.mark.skipif(False)
     def test7_brokenLinks(self):
         brokenLinks_test(self.driver)
-
+    """
+    @pytest.mark.skipif(False)
+    def test8_uploadDownload(self):
+        uploadDownload_test(self.driver)
+    """
+    @pytest.mark.skipif(False)
+    def test8_dynamicProperties(self):
+        dynamicProperties_test(self.driver)
+    """
     @classmethod
     def tearDown(cls):
         print("\n FIN DE LOS TESTS")
