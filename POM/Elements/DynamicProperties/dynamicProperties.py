@@ -3,7 +3,7 @@ import time
 
 class dynamicProperties_test:
     def __init__(self, driver):
-        self.radioButtom_flow(driver)
+        self.dynamicProperties_flow(driver)
 
     def dynamicProperties_flow(self, driver):
         print("--- TEST CASE: 'dynamicProperties' ---")
