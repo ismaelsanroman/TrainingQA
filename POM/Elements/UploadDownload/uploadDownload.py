@@ -1,4 +1,3 @@
-import os
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 import time
@@ -10,6 +9,7 @@ def verify_UpDown(driver):
         print("- Descarga y subida del archivo correcta")
     else:
         print("-- ¡¡¡ERROR!!! en la descarga y subida del archivo")
+
 
 def uploadDownload_flow(driver):
     print("--- TEST CASE: 'uploadDownload' ---")

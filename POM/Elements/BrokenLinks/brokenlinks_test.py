@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-import time
 
 
 def click_link(driver, tag):
@@ -22,21 +21,21 @@ def img_verify(driver, tag):
         print('-- ¡¡¡ERROR!!! Imagen incorrecta')
 
 
+def brokenLinks_flow(driver):
+    print("--- TEST CASE: 'broken_links' ---")
+
+    driver.find_element(By.XPATH, '//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]').click()
+    driver.find_element(By.ID, 'item-6').click()
+
+    img_verify(driver, "//body/div[@id='app']/div[1]/div[1]/div[2]/div[2]/div[2]/img[1]")
+    img_verify(driver, "//body/div[@id='app']/div[1]/div[1]/div[2]/div[2]/div[2]/img[2]")
+
+    click_link(driver, "//a[contains(text(),'Click Here for Valid Link')]")
+    click_link(driver, "//a[contains(text(),'Click Here for Broken Link')]")
+
+    print("--- TEST CASE Done ---")
+
+
 class brokenLinks_test:
     def __init__(self, driver):
-        self.brokenLinks_flow(driver)
-
-    def brokenLinks_flow(self, driver):
-        print("--- TEST CASE: 'broken_links' ---")
-
-        driver.find_element(By.XPATH, '//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]').click()
-        driver.find_element(By.ID, 'item-6').click()
-
-        img_verify(driver, "//body/div[@id='app']/div[1]/div[1]/div[2]/div[2]/div[2]/img[1]")
-        img_verify(driver, "//body/div[@id='app']/div[1]/div[1]/div[2]/div[2]/div[2]/img[2]")
-
-        click_link(driver, "//a[contains(text(),'Click Here for Valid Link')]")
-        click_link(driver, "//a[contains(text(),'Click Here for Broken Link')]")
-
-        time.sleep(3)
-        print("--- TEST CASE Done ---")
+        brokenLinks_flow(driver)

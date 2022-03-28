@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-import time
 
 
 def verify_radioButtom(driver, tag_xpath, tag_css, tag_name):
@@ -24,24 +23,26 @@ def verify_radioButtom(driver, tag_xpath, tag_css, tag_name):
 
     driver.implicitly_wait(3)
 
+
+def radioButtom_flow(driver):
+    print("--- TEST CASE: 'radioButtom' ---")
+    driver.find_element(By.XPATH, '//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]').click()
+    driver.find_element(By.ID, 'item-2').click()
+    driver.implicitly_wait(1)
+
+    # ---------------------------------------------------------------------------------------
+
+    verify_radioButtom(driver, "//label[contains(text(),'Yes')]", "input[id='yesRadio']", "Yes")
+
+    verify_radioButtom(driver, "//label[contains(text(),'Impressive')]", "input[id='impressiveRadio']", "Impressive")
+
+    verify_radioButtom(driver, "//label[contains(text(),'No')]", "input[id='noRadio']", "No")
+
+    # --------------------------------------------------------------------------------------
+
+    print("--- TEST CASE Done ---")
+
+
 class radioButtom_test:
     def __init__(self, driver):
-        self.radioButtom_flow(driver)
-
-    def radioButtom_flow(self, driver):
-        print("--- TEST CASE: 'radioButtom' ---")
-        driver.find_element(By.XPATH, '//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]').click()
-        driver.find_element(By.ID, 'item-2').click()
-        driver.implicitly_wait(1)
-
-        # ---------------------------------------------------------------------------------------
-
-        verify_radioButtom(driver, "//label[contains(text(),'Yes')]", "input[id='yesRadio']", "Yes")
-
-        verify_radioButtom(driver, "//label[contains(text(),'Impressive')]", "input[id='impressiveRadio']", "Impressive")
-
-        verify_radioButtom(driver, "//label[contains(text(),'No')]", "input[id='noRadio']", "No")
-
-        # --------------------------------------------------------------------------------------
-
-        print("--- TEST CASE Done ---")
+        radioButtom_flow(driver)

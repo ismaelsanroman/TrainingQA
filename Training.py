@@ -19,6 +19,7 @@ from POM.Elements.Links.links_test import links_test
 from POM.Elements.BrokenLinks.brokenlinks_test import brokenLinks_test
 from POM.Elements.UploadDownload.uploadDownload import uploadDownload_test
 from POM.Elements.DynamicProperties.dynamicProperties import dynamicProperties_test
+from POM.Forms.PracticeForm.practiceForm import practiceForm_test
 
 
 class Training(unittest.TestCase):
@@ -36,7 +37,6 @@ class Training(unittest.TestCase):
         driver.delete_all_cookies()
         driver.get("https://demoqa.com/")
         driver.implicitly_wait(time_to_wait=10)
-
     """
     @pytest.mark.skipif(False)
     def test1_textBox(self):
@@ -69,10 +69,14 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)
     def test8_uploadDownload(self):
         uploadDownload_test(self.driver)
-    """
+
     @pytest.mark.skipif(False)
     def test9_dynamicProperties(self):
         dynamicProperties_test(self.driver)
+    """
+    @pytest.mark.skipif(False)
+    def test10_practiceForm(self):
+        practiceForm_test(self.driver, user_data=self.get_json_data())
 
     @classmethod
     def tearDown(cls):
