@@ -22,7 +22,6 @@ from POM.Elements.DynamicProperties.dynamicProperties import dynamicProperties_t
 
 
 class Training(unittest.TestCase):
-
     """
     @classmethod
     def setUpClass(cls):
@@ -37,6 +36,7 @@ class Training(unittest.TestCase):
         driver.delete_all_cookies()
         driver.get("https://demoqa.com/")
         driver.implicitly_wait(time_to_wait=10)
+
     """
     @pytest.mark.skipif(False)
     def test1_textBox(self):
@@ -49,23 +49,23 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)
     def test3_radioButtom(self):
         radioButtom_test(self.driver)
-    
+
     @pytest.mark.skipif(False)
     def test4_webTables(self):
         webTables_test(self.driver, user_data=self.get_json_data())
-    
+
     @pytest.mark.skipif(False)
     def test5_button(self):
         button_test(self.driver)
-    
+
     @pytest.mark.skipif(False)
     def test6_links(self):
         links_test(self.driver)
-    
+
     @pytest.mark.skipif(False)
     def test7_brokenLinks(self):
         brokenLinks_test(self.driver)
-    """
+
     @pytest.mark.skipif(False)
     def test8_uploadDownload(self):
         uploadDownload_test(self.driver)
@@ -73,7 +73,7 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)
     def test9_dynamicProperties(self):
         dynamicProperties_test(self.driver)
-    """
+
     @classmethod
     def tearDown(cls):
         print("\n FIN DE LOS TESTS")
