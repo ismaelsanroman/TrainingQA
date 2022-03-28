@@ -58,7 +58,6 @@ class Training(unittest.TestCase):
     def test5_button(self):
         button_test(self.driver)
     
-
     @pytest.mark.skipif(False)
     def test6_links(self):
         links_test(self.driver)
@@ -72,7 +71,7 @@ class Training(unittest.TestCase):
         uploadDownload_test(self.driver)
     """
     @pytest.mark.skipif(False)
-    def test8_dynamicProperties(self):
+    def test9_dynamicProperties(self):
         dynamicProperties_test(self.driver)
     """
     @classmethod
