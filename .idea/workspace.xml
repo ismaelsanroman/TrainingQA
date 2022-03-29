@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e51e482-7a56-4a5c-8daf-ee8f310d6c9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/POM/AlertsFrameWindows/Alerts/alerts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/AlertsFrameWindows/BrowserWindows/browserWindows.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/AlertsFrameWindows/Frames/frames.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/AlertsFrameWindows/ModalDialogs/modalDialogs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/AlertsFrameWindows/NestedFrames/nestedFrames.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTesting/DataUser.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataTesting/DataUser.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/Forms/PracticeForm/practiceForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Forms/PracticeForm/practiceForm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Training.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

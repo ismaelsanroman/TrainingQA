@@ -20,6 +20,11 @@ from POM.Elements.BrokenLinks.brokenlinks_test import brokenLinks_test
 from POM.Elements.UploadDownload.uploadDownload import uploadDownload_test
 from POM.Elements.DynamicProperties.dynamicProperties import dynamicProperties_test
 from POM.Forms.PracticeForm.practiceForm import practiceForm_test
+from POM.AlertsFrameWindows.Alerts.alerts import alerts_test
+from POM.AlertsFrameWindows.BrowserWindows.browserWindows import browserWindows_test
+from POM.AlertsFrameWindows.Frames.frames import frames_test
+from POM.AlertsFrameWindows.ModalDialogs.modalDialogs import modalDialogs_test
+from POM.AlertsFrameWindows.NestedFrames.nestedFrames import nestedFrames_test
 
 
 class Training(unittest.TestCase):
@@ -73,11 +78,31 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)
     def test9_dynamicProperties(self):
         dynamicProperties_test(self.driver)
-    """
+    
     @pytest.mark.skipif(False) # ---> Sin terminar
     def test10_practiceForm(self):
         practiceForm_test(self.driver, user_data=self.get_json_data())
+    """
+    @pytest.mark.skipif(False)  # ---> Por realizar
+    def test11_browserWindows(self):
+        browserWindows_test(self.driver)
+    """
+    @pytest.mark.skipif(False)  # ---> Por realizar
+    def test12_alerts(self):
+        alerts_test(self.driver)
 
+    @pytest.mark.skipif(False)  # ---> Por realizar
+    def test13_frames(self):
+        frames_test(self.driver)
+
+    @pytest.mark.skipif(False)  # ---> Por realizar
+    def test14_nestedFrames(self):
+        nestedFrames_test(self.driver)
+
+    @pytest.mark.skipif(False)  # ---> Por realizar
+    def test15_modalDialogs(self):
+        modalDialogs_test(self.driver)
+    """
     @classmethod
     def tearDown(cls):
         print("\n FIN DE LOS TESTS")
