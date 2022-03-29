@@ -74,7 +74,7 @@ class Training(unittest.TestCase):
     def test9_dynamicProperties(self):
         dynamicProperties_test(self.driver)
     """
-    @pytest.mark.skipif(False)
+    @pytest.mark.skipif(False) # ---> Sin terminar
     def test10_practiceForm(self):
         practiceForm_test(self.driver, user_data=self.get_json_data())
 

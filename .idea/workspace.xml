@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e51e482-7a56-4a5c-8daf-ee8f310d6c9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/POM/Forms/PracticeForm/practiceForm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022-03-27-13-48-04.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/Elements/BrokenLinks/brokenlinks_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Elements/BrokenLinks/brokenlinks_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/Elements/Button/button_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Elements/Button/button_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/Elements/CheckBox/checkBox_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Elements/CheckBox/checkBox_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/Elements/DynamicProperties/dynamicProperties.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Elements/DynamicProperties/dynamicProperties.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/Elements/Links/links_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Elements/Links/links_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/Elements/RadioButtom/radioButtom_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Elements/RadioButtom/radioButtom_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/Elements/TextBox/textbox_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Elements/TextBox/textbox_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/Elements/UploadDownload/uploadDownload.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Elements/UploadDownload/uploadDownload.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/Elements/WebTables/webTables.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Elements/WebTables/webTables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataTesting/DataUser.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataTesting/DataUser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POM/Forms/PracticeForm/practiceForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Forms/PracticeForm/practiceForm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
