@@ -1,9 +1,19 @@
 from selenium.webdriver.common.by import By
-from datetime import time
+import time
 
 
 def nestedFrames_flow(driver):
     print("--- TEST CASE: 'nestedFrames' ---")
+
+    driver.find_element(By.XPATH, '//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]').click()
+    driver.find_element(By.ID, "close-fixedban").click()
+    target = driver.find_element(By.XPATH,
+                                 "//body/div[@id='app']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/span[1]/div[1]/div[2]")
+    target.location_once_scrolled_into_view
+    target.click()
+    driver.find_element(By.XPATH, "//body/div[@id='app']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]").click()
+
+    #  -----------------------------------------------------------------------------------------
 
     print("--- TEST CASE Done ---")
 

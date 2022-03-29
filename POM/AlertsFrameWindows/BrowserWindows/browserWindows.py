@@ -28,6 +28,8 @@ def browserWindows_flow(driver):
     driver.find_element(By.XPATH,
                         "//body/div[@id='app']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]").click()
 
+    #  -----------------------------------------------------------------------------------------
+
     open_tab(driver, "tabButton", 'New Tab')
     open_tab(driver, "windowButton", 'New Windows')
     open_tab(driver, "messageWindowButton", 'New Windows Message')
