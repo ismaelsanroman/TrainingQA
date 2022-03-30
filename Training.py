@@ -82,7 +82,7 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False) # ---> Sin terminar
     def test10_practiceForm(self):
         practiceForm_test(self.driver, user_data=self.get_json_data())
-    """
+    
     @pytest.mark.skipif(False)  # ---> Por realizar
     def test11_browserWindows(self):
         browserWindows_test(self.driver)
@@ -90,7 +90,7 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)  # ---> Por realizar
     def test12_alerts(self):
         alerts_test(self.driver)
-
+    """
     @pytest.mark.skipif(False)  # ---> Por realizar
     def test13_frames(self):
         frames_test(self.driver)
