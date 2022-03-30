@@ -90,19 +90,19 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)
     def test12_alerts(self):
         alerts_test(self.driver)
-        
+    """
     @pytest.mark.skipif(False)  # ---> Por realizar
     def test13_frames(self):
         frames_test(self.driver)
-        
+    """
     @pytest.mark.skipif(False)  # ---> Por realizar
     def test14_nestedFrames(self):
         nestedFrames_test(self.driver)
-    """
-    @pytest.mark.skipif(False)  # ---> Por realizar
+    
+    @pytest.mark.skipif(False)
     def test15_modalDialogs(self):
         modalDialogs_test(self.driver)
-
+    """
     @classmethod
     def tearDown(cls):
         print("\n FIN DE LOS TESTS")
