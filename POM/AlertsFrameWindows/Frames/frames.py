@@ -1,14 +1,12 @@
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.support.wait import WebDriverWait
 import time
 
 
 def goto_frame(driver, tag, iframe):
     try:
         driver.switch_to.frame(iframe)
-        # WebDriverWait(driver, 1).until(ec.driver.find_element(By.ID, tag))
+        driver.implicitly_wait(time_to_wait=3)
         show_text = print(driver.find_element(By.ID, tag).text)
         print(f"'{iframe}' muestra el siguiente contenido: '{show_text}'")
         driver.switch_to.default_content()
@@ -31,8 +29,6 @@ def frames_flow(driver):
 
     goto_frame(driver, 'sampleHeading', 'frame1')
     goto_frame(driver, 'sampleHeading', 'frame2')
-
-    time.sleep(3)
 
     print("--- TEST CASE Done ---")
 
