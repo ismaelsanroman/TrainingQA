@@ -4,6 +4,8 @@ import pytest
 import json
 import os
 
+from behave import *
+
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 # from webdriver_manager.firefox import GeckoDriverManager
@@ -25,6 +27,15 @@ from POM.AlertsFrameWindows.BrowserWindows.browserWindows import browserWindows_
 from POM.AlertsFrameWindows.Frames.frames import frames_test
 from POM.AlertsFrameWindows.ModalDialogs.modalDialogs import modalDialogs_test
 from POM.AlertsFrameWindows.NestedFrames.nestedFrames import nestedFrames_test
+from POM.BookStoreApplication.BookStore.bookStore import bookStore_test
+from POM.BookStoreApplication.Login.login import login_test
+from POM.BookStoreApplication.Profile.profile import profile_test
+
+"""
+@given('we have behave installed')
+@when('we implement a test')
+@then('behave will test it for us!')
+"""
 
 
 class Training(unittest.TestCase):
@@ -42,11 +53,13 @@ class Training(unittest.TestCase):
         driver.delete_all_cookies()
         driver.get("https://demoqa.com/")
         driver.implicitly_wait(time_to_wait=10)
-    """
+
     @pytest.mark.skipif(False)
+    @given(u'I load the website')
     def test1_textBox(self):
         textbox_test(self.driver, user_data=self.get_json_data())
 
+    """
     @pytest.mark.skipif(False)
     def test2_checkBox(self):
         checkBox_test(self.driver)
@@ -94,15 +107,28 @@ class Training(unittest.TestCase):
     @pytest.mark.skipif(False)
     def test13_frames(self):
         frames_test(self.driver)
-    """
-    @pytest.mark.skipif(False)  # ---> Por realizar
+
+    @pytest.mark.skipif(False)
     def test14_nestedFrames(self):
         nestedFrames_test(self.driver)
-    """
+
     @pytest.mark.skipif(False)
     def test15_modalDialogs(self):
         modalDialogs_test(self.driver)
+
+    @pytest.mark.skipif(False)
+    def test16_modalDialogs(self):
+        login_test(self.driver, user_data=self.get_json_data())
+
+    @pytest.mark.skipif(False) # ---> Por realizar
+    def test17_modalDialogs(self):
+        bookStore_test(self.driver)
+
+    @pytest.mark.skipif(False) # ---> Por realizar
+    def test18_modalDialogs(self):
+        profile_test(self.driver)
     """
+
     @classmethod
     def tearDown(cls):
         print("\n FIN DE LOS TESTS")

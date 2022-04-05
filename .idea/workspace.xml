@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e51e482-7a56-4a5c-8daf-ee8f310d6c9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Features/Elements.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/BookStoreApplication/BookStore/bookStore.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/BookStoreApplication/Login/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/BookStoreApplication/Profile/profile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/AlertsFrameWindows/Frames/frames.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/AlertsFrameWindows/Frames/frames.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POM/AlertsFrameWindows/NestedFrames/nestedFrames.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/AlertsFrameWindows/NestedFrames/nestedFrames.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataTesting/DataUser.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataTesting/DataUser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POM/Elements/TextBox/textbox_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/Elements/TextBox/textbox_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Training.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +42,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Ismael\Documents\QATraining\TrainingQA\Features" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.Training">
     <configuration name="Training (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
