@@ -12,6 +12,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from pyunitreport import HTMLTestRunner
 
+from POM.API.Api import api_test
 from POM.Elements.TextBox.textbox_test import textbox_test
 from POM.Elements.CheckBox.checkBox_test import checkBox_test
 from POM.Elements.RadioButtom.radioButtom_test import radioButtom_test
@@ -54,12 +55,13 @@ class Training(unittest.TestCase):
         driver.get("https://demoqa.com/")
         driver.implicitly_wait(time_to_wait=10)
 
+    """
     @pytest.mark.skipif(False)
     @given(u'I load the website')
     def test1_textBox(self):
         textbox_test(self.driver, user_data=self.get_json_data())
 
-    """
+    
     @pytest.mark.skipif(False)
     def test2_checkBox(self):
         checkBox_test(self.driver)
@@ -128,6 +130,10 @@ class Training(unittest.TestCase):
     def test18_modalDialogs(self):
         profile_test(self.driver)
     """
+
+    @pytest.mark.skipif(False)
+    def test19_modalDialogs(self):
+        api_test()
 
     @classmethod
     def tearDown(cls):
